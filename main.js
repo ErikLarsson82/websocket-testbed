@@ -32,7 +32,7 @@ ws.onmessage = rawEvent => {
     event.data.slice(0, RENDERING).forEach((pos, idx) => {
       document.getElementById(`target-${idx}`).innerHTML = `Long: ${pos.long} - Lat: ${pos.lat}`
     })
-    // event.data.length = 0
+    event.data.length = 0
   }
 }
 
